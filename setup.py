@@ -19,6 +19,8 @@ setup(
     name = "motiffinder",
     version = this_version,
     packages = ['motiffinder'],
+    package_dir = {'motiffinder': 'motiffinder'},
+    package_data = {'motiffinder': ['static/*']},
     description = "A novel approach to motif identification in proteins",
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -47,5 +49,6 @@ setup(
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Scientific/Engineering :: Bio-Informatics"
-    ]
+    ],
+    zip_safe = True
 )
