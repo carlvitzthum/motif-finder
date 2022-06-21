@@ -9,7 +9,7 @@ with io.open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 # dependencies must be handled carefully for py2 and py3 compatibility
 requires = [
     'biopython<=1.74',
-    'numpy>=1.10.1,<=1.16.3',
+    'numpy>=1.10.1,<1.22.1',
     'importlib_resources'
 ]
 
